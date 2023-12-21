@@ -8,7 +8,8 @@ module.exports = {
 	plugins: [
 		// require('@tailwindcss/typography'),
 		// require('@tailwindcss/forms'),
-		require("daisyui")
+		require("daisyui"),
+		require('flowbite/plugin'),
 	],
 	daisyui: {
 		themes: [
@@ -17,7 +18,7 @@ module.exports = {
 
 					"primary": "#facc15",
 
-					"secondary": "#f43f5e",
+					"secondary": "#3472cf",
 
 					"accent": "#0064ff",
 
