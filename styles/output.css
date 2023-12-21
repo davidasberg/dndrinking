@@ -1475,6 +1475,10 @@ input[type="range"]::-ms-fill-lower {
   width: 16rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -1580,6 +1584,11 @@ input[type="range"]::-ms-fill-lower {
 .bg-base-200 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
 }
 
 .px-4 {

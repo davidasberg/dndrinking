@@ -4,9 +4,9 @@ use yew_router::prelude::*;
 #[derive(Clone, Routable, PartialEq)]
 
 pub enum Route {
-    #[at("/rules")]
-    Rules,
     #[at("/")]
+    Rules,
+    #[at("/classes")]
     Classes,
     #[at("/beercard")]
     BeerCard,
@@ -112,13 +112,11 @@ fn nav() -> Html {
     };
 
     html! {
-        <nav class="bg-base-100 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                <div class="flex items-center lg:order-2 gap-4">
-                    {rules_button}
-                    {classes_button}
-                    {beer_card_button}
-                </div>
+        <nav class="bg-base-100 w-full">
+            <div class="flex justify-center items-center lg:order-2 gap-4">
+                {rules_button}
+                {classes_button}
+                {beer_card_button}
             </div>
         </nav>
     }
