@@ -11,9 +11,15 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,7 +36,7 @@ jobs:
       - name: Configure Github pages
         id: pages
         uses: actions/configure-pages@v3
-        
+
       - name: Install Trunk
         uses: jetli/trunk-action@v0.4.0
         with:
