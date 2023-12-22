@@ -27,7 +27,10 @@ jobs:
             ~/.cargo/registry
             target
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
-
+      - name: Configure Github pages
+        id: pages
+        uses: actions/configure-pages@v3
+        
       - name: Install Trunk
         uses: jetli/trunk-action@v0.4.0
         with:
@@ -41,8 +44,9 @@ jobs:
           npm install daisyui @tailwindcss/forms @tailwindcss/typography
       - name: Build the Rust WASM app and all of its assets
         run: trunk build --release      
+      
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
           path: "./dist"
 
@@ -60,4 +64,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
