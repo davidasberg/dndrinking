@@ -40,11 +40,7 @@ jobs:
         run: |
           npm install daisyui @tailwindcss/forms @tailwindcss/typography
       - name: Build the Rust WASM app and all of its assets
-        run: trunk build --release
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      
+        run: trunk build --release      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
