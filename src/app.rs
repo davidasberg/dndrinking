@@ -1,6 +1,8 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
+use crate::beer_card::BeerCard;
+use crate::classes::Classes;
 use crate::header::Header;
 
 #[derive(Clone, Routable, PartialEq)]

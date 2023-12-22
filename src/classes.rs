@@ -2,7 +2,7 @@ use yew::prelude::*;
 use yew_router::prelude::*;
 
 #[function_component(Classes)]
-fn classes() -> Html {
+pub fn classes() -> Html {
     html! {
         <section class="grid lg:grid-cols-1 items-center gap-8 w-4/5">
             <ClassCard class="Fighter" description="Fight your way through anything" image="img/fighter.jpg" />
@@ -21,14 +21,6 @@ fn classes() -> Html {
     }
 }
 
-#[function_component(BeerCard)]
-fn beer_card() -> Html {
-    html! {
-        <section class="py-10 bg-white sm:py-16 lg:py-24">
-            <h1 class="text-4xl font-extrabold tracking-tight text-center text-gray-900 sm:text-5xl lg:text-6xl">{"Ölkort"}</h1>
-        </section>
-    }
-}
 #[derive(Clone, Properties, PartialEq)]
 struct ClassCardProps {
     pub class: AttrValue,
