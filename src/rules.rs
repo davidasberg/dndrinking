@@ -8,7 +8,9 @@ pub fn rules() -> Html {
 
             <p class="text-lg font-bold tracking-tight text-center w-1/2">{"Spelet spelas med en D20. Alla börjar med att slå tärningen en gång. Personen som slår högst får välja klass först. Vid slag av 20 får man även välja DM. Om två personer slår samma får de tävla i sten sax påse om vem som får välja först."}</p>
 
-            <ol class="list-decimal list-inside space-y-4">
+            <div class="divider self-center w-1/2"></div>
+
+            <ol class="list-decimal list-inside space-y-4 w-1/2">
                 <li class="text-lg">{"Critical Failure! Ta en shot!"}</li>
                 <li class="text-lg">{"Svep resten!"}</li>
                 <li class="text-lg">{"Slå och drick"}</li>
