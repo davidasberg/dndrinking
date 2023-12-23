@@ -1,7 +1,8 @@
 mod app;
-mod beer_card;
+mod beer_cards;
 mod classes;
 mod header;
+mod rules;
 
 use app::App;
 

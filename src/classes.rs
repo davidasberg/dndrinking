@@ -4,7 +4,9 @@ use yew_router::prelude::*;
 #[function_component(Classes)]
 pub fn classes() -> Html {
     html! {
-        <section class="grid lg:grid-cols-1 items-center gap-8 w-4/5">
+        <>
+        <h1 class="text-4xl my-10 font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">{"Classes"}</h1>
+        <section class="container mx-auto grid lg:grid-cols-2 gap-8 w-1/2 lg:w-4/5">
             <ClassCard class="Fighter" description="Fight your way through anything" image="img/fighter.jpg" />
             <ClassCard class="Ranger" description="Shoot stuff" image="img/ranger.jpg" />
             <ClassCard class="Wizard" description="Cast spells" image="img/wizard.jpg" />
@@ -18,6 +20,7 @@ pub fn classes() -> Html {
             <ClassCard class="Warlock" description="Cast spells" image="img/warlock.jpg" />
             <ClassCard class="Bard" description="Cast spells" image="img/bard.jpg" />
         </section>
+        </>
     }
 }
 

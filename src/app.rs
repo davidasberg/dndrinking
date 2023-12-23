@@ -1,9 +1,10 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::beer_card::BeerCard;
+use crate::beer_cards::BeerCards;
 use crate::classes::Classes;
 use crate::header::Header;
+use crate::rules::Rules;
 
 #[derive(Clone, Routable, PartialEq)]
 
@@ -37,16 +38,7 @@ fn switch(routes: Route) -> Html {
             <Classes />
         },
         Route::BeerCard => html! {
-            <BeerCard />
+            <BeerCards />
         },
-    }
-}
-
-#[function_component(Rules)]
-fn rules() -> Html {
-    html! {
-        <section class="py-10 bg-white sm:py-16 lg:py-24">
-            <h1 class="text-4xl font-extrabold tracking-tight text-center text-gray-900 sm:text-5xl lg:text-6xl">{"Regler"}</h1>
-        </section>
     }
 }
