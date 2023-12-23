@@ -20,12 +20,12 @@ pub enum Route {
 #[function_component(App)]
 pub fn app() -> Html {
     html! {
-        <BrowserRouter>
+        <HashRouter>
         <div class="flex flex-col">
             <Header />
             <Switch<Route> render={switch} />
         </div>
-        </BrowserRouter>
+        </HashRouter>
     }
 }
 
