@@ -11,7 +11,7 @@ pub fn header() -> Html {
         let navigator = navigator.clone();
         let onclick = Callback::from(move |_| navigator.push(&Route::Rules));
         html! {
-            <button {onclick} class="btn btn-primary normal-case text-xl">{"Rules"}</button>
+            <button {onclick} class="btn btn-primary normal-case text-xl transition duration-0 hover:duration-150 hover:scale-110">{"Rules"}</button>
         }
     };
 
@@ -19,7 +19,7 @@ pub fn header() -> Html {
         let navigator = navigator.clone();
         let onclick = Callback::from(move |_| navigator.push(&Route::Classes));
         html! {
-            <button {onclick} class="btn btn-primary normal-case text-xl">{"Classes"}</button>
+            <button {onclick} class="btn btn-primary normal-case text-xl transition duration-0 hover:duration-150 hover:scale-110">{"Classes"}</button>
         }
     };
 
@@ -27,7 +27,7 @@ pub fn header() -> Html {
         let navigator = navigator.clone();
         let onclick = Callback::from(move |_| navigator.push(&Route::BeerCard));
         html! {
-            <button {onclick} class="btn btn-primary normal-case text-xl">{"Beer Card"}</button>
+            <button {onclick} class="btn btn-primary normal-case text-xl transition duration-0 hover:duration-150 hover:scale-110">{"Beer Card"}</button>
         }
     };
 
