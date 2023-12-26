@@ -49,7 +49,7 @@ pub fn beer_cards() -> Html {
             <h1 class="text-4xl my-10 font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">{"Beer Cards"}</h1>
             <p1 class="text-lg text-center">{"Ölkort är roliga! Dra ett kort när du slår en 20a"}</p1>
 
-            <button onclick={onclick} class="btn btn-primary normal-case text-xl my-6 transition duration-0 hover:duration-150 hover:scale-110">{"Dra ett kort"}</button>
+            <button onclick={onclick} class="btn btn-primary normal-case text-xl my-6 transition delay-50 ease-in-out duration-150 hover:scale-110">{"Dra ett kort"}</button>
 
             <BeerCard title={(*current_card).title} description={(*current_card).description} />
 
@@ -62,7 +62,7 @@ fn beer_card(props: &BeerCardProps) -> Html {
     let BeerCardProps { title, description } = props;
 
     html! {
-        <div class="card w-96 bg-base-100 shadow-xl image-full transition duration-0 hover:duration-150 hover:scale-110">
+        <div class="card w-96 bg-base-100 shadow-xl image-full transition delay-50 ease-in-out duration-150 hover:scale-110">
         <div class="card-body">
           <h2 class="card-title">{title}</h2>
           <p>{description}</p>

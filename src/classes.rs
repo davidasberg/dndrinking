@@ -40,7 +40,7 @@ fn class_card(class_card: &ClassCardProps) -> Html {
     } = class_card;
 
     html! {
-        <div class="card flex shadow-xl bg-neutral transition duration-0 hover:duration-150 hover:scale-105">
+        <div class="card flex shadow-xl bg-neutral transition delay-50 ease-in-out duration-150 hover:scale-105">
             <figure><img src={image} alt={class}/></figure>
             <div class="card-body">
                     <h2 class="card-title">{class}</h2>
