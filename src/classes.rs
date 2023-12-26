@@ -5,20 +5,20 @@ use yew_router::prelude::*;
 pub fn classes() -> Html {
     html! {
         <>
-        <h1 class="text-4xl my-10 font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">{"Classes"}</h1>
-        <section class="container mx-auto grid lg:grid-cols-2 gap-8 w-1/2 lg:w-4/5">
-            <ClassCard class="Fighter" description="Fight your way through anything" image="img/fighter.jpg" />
-            <ClassCard class="Ranger" description="Shoot stuff" image="img/ranger.jpg" />
-            <ClassCard class="Wizard" description="Cast spells" image="img/wizard.jpg" />
-            <ClassCard class="Rogue" description="Sneak around" image="img/rogue.jpg" />
-            <ClassCard class="Cleric" description="Heal stuff" image="img/cleric.jpg" />
-            <ClassCard class="Barbarian" description="Rage" image="img/barbarian.jpg" />
-            <ClassCard class="Druid" description="Turn into animals" image="img/druid.jpg" />
-            <ClassCard class="Monk" description="Punch stuff" image="img/monk.jpg" />
-            <ClassCard class="Paladin" description="Smite stuff" image="img/paladin.jpg" />
-            <ClassCard class="Sorcerer" description="Cast spells" image="img/sorcerer.jpg" />
-            <ClassCard class="Warlock" description="Cast spells" image="img/warlock.jpg" />
-            <ClassCard class="Bard" description="Cast spells" image="img/bard.jpg" />
+        <h1 class="text-4xl my-10 font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">{"Klasser"}</h1>
+        <section class="container mx-auto grid lg:grid-cols-2 gap-8 lg:w-4/5">
+            <ClassCard class="Barbarian" description="Du får dela ut 1 klunk till valfri person varje gång du dricker." image="img/barbarian.jpg" />
+            <ClassCard class="Bard" description="I början av din runda får du välja en mate. Din mate dricker alltid när du dricker, samma mängd." image="img/bard.jpg" />
+            <ClassCard class="Cleric" description="Bless or Bane! Använd din reaction för att addera 2 eller subtrahera 2 från ett tärningsslag, en gång per runda. 1 och 20 går inte.            " image="img/cleric.jpg" />
+            <ClassCard class="Druid" description="Du är en Furry. Grattis." image="img/druid.jpg" />
+            <ClassCard class="Fighter" description="Du kan istället för att dricka, utmana en annan person i sten sax påse. Förlorar du dricker du dubbelt, annars dricker den andra personen. Gäller ej på Critical Failure." image="img/fighter.jpg" />
+            <ClassCard class="Monk" description="Du får välja alkoholfritt." image="img/monk.jpg" />
+            <ClassCard class="Paladin" description="Använd din reaction för att halvera antal klunkar, ge den andra hälften till någon annan." image="img/paladin.jpg" />
+            <ClassCard class="Ranger" description="Placera Hunters Mark på någon i början av din runda. Personen rullar med disadvantage på sin nästa runda." image="img/ranger.jpg" />
+            <ClassCard class="Rogue" description="Evasion! Rulla för att halvera antal klunkar. Över 10 halverar, 1 dubblar." image="img/rogue.jpg" />
+            <ClassCard class="Sorcerer" description="Använd din reaction för att redirecta vad som helst till en annan person. En gång per runda. Gäller inte 1 och 20." image="img/sorcerer.jpg" />
+            <ClassCard class="Warlock" description="Du får rulla om en gång per runda, i utbyte av 2 klunkar. Gäller ej Critical Failure." image="img/warlock.jpg" />
+            <ClassCard class="Wizard" description="Använd sköld som reaction! Förhindra en attack en gång per runda. Få tillbaka din reaction efter din egna tur." image="img/wizard.jpg" />
         </section>
         </>
     }
@@ -45,9 +45,9 @@ fn class_card(class_card: &ClassCardProps) -> Html {
             <div class="card-body">
                     <h2 class="card-title">{class}</h2>
                     <p>{description}</p>
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary">{"Read more"}</button>
-                </div>
+                // <div class="card-actions justify-end">
+                //     <button class="btn btn-primary">{"Read more"}</button>
+                // </div>
             </div>
         </div>
     }
