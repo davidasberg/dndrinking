@@ -4,7 +4,7 @@ use yew::prelude::*;
 pub fn rules() -> Html {
     html! {
         <div class="container mx-auto flex flex-col my-10 px-4 sm:px-6 lg:px-8 items-center justify-items-center">
-            <h1 class="text-4xl font-extrabold text-center py-4 sm:text-5xl lg:text-6xl">{"Regler"}</h1>
+            <h1 class="text-4xl my-10 font-extrabold text-center tracking-tight sm:text-5xl lg:text-6xl">{"Regler"}</h1>
 
             <p class="text-lg font-bold text-center tracking-tight text-balance">{"Spelet spelas med en D20. Alla börjar med att slå tärningen en gång. Personen som slår högst får välja klass först. Vid slag av 20 får man även välja DM. Om två personer slår samma får de tävla i sten sax påse om vem som får välja först."}</p>
 

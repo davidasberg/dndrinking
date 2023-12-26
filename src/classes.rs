@@ -4,9 +4,9 @@ use yew_router::prelude::*;
 #[function_component(Classes)]
 pub fn classes() -> Html {
     html! {
-        <>
+        <div class="container mx-auto flex flex-col my-10 px-4 sm:px-6 lg:px-8 items-center justify-items-center">
         <h1 class="text-4xl my-10 font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">{"Klasser"}</h1>
-        <section class="container mx-auto grid lg:grid-cols-2 gap-8 lg:w-4/5">
+        <section class="grid lg:grid-cols-2 gap-8 lg:w-4/5">
             <ClassCard class="Barbarian" description="Du får dela ut 1 klunk till valfri person varje gång du dricker." image="img/barbarian.jpg" />
             <ClassCard class="Bard" description="I början av din runda får du välja en mate. Din mate dricker alltid när du dricker, samma mängd." image="img/bard.jpg" />
             <ClassCard class="Cleric" description="Bless or Bane! Använd din reaction för att addera 2 eller subtrahera 2 från ett tärningsslag, en gång per runda. 1 och 20 går inte.            " image="img/cleric.jpg" />
@@ -20,7 +20,7 @@ pub fn classes() -> Html {
             <ClassCard class="Warlock" description="Du får rulla om en gång per runda, i utbyte av 2 klunkar. Gäller ej Critical Failure." image="img/warlock.jpg" />
             <ClassCard class="Wizard" description="Använd sköld som reaction! Förhindra en attack en gång per runda. Få tillbaka din reaction efter din egna tur." image="img/wizard.jpg" />
         </section>
-        </>
+        </div>
     }
 }
 

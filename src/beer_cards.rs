@@ -32,7 +32,7 @@ pub fn beer_cards() -> Html {
     let current_card = CARDS.choose(&mut rand::thread_rng());
 
     html! {
-        <div class="container mx-auto flex flex-col justify-center items-center">
+        <div class="container mx-auto flex flex-col my-10 px-4 sm:px-6 lg:px-8 items-center justify-items-center">
             <h1 class="text-4xl my-10 font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">{"Beer Cards"}</h1>
             <p1 class="text-lg text-center">{"Ölkort är roliga! Dra ett kort när du slår en 20a"}</p1>
 
