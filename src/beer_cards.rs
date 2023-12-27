@@ -1,41 +1,31 @@
+use serde::Deserialize;
 use yew::{prelude::*, virtual_dom::VNode};
 use yew_router::prelude::*;
 
 use rand::seq::SliceRandom;
 
-const CARDS: [Card; 4] = [
-    Card {
-        title: "Ölkort",
-        description: "Det här är ett ölkort, dra ett ölkort när du slår 20!",
-    },
-    Card {
-        title: "Gudarna har bestämt att du ska byta klass",
-        description: "Rulla en tärning, vid 20 får du byta till DM, annars får du välja en klass att byta till",
-    },
-    Card {
-        title: "Oscar fattar inte",
-        description: "Oscar förstår inte reglerna, han dricker 2 klunkar",
-    },
-    Card {
-        title: "Drick öl",
-        description: "Drick en öl",
-    },
-];
-
-#[derive(Clone, Copy, Eq, PartialEq)]
+#[derive(Clone, Copy, Eq, PartialEq, Deserialize)]
 struct Card {
     title: &'static str,
     description: &'static str,
+    probability: u32,
 }
 
 #[function_component(BeerCards)]
 pub fn beer_cards() -> Html {
-    let current_card = use_state(|| CARDS[0]);
+    let cards = include_str!("../data/beer_cards.ron");
+    let mut cards: Vec<Card> = ron::from_str(cards).unwrap();
+
+    let current_card = use_state(|| cards[0]);
+
+    cards.sort_by(|a, b| a.probability.partial_cmp(&b.probability).unwrap());
 
     let onclick = {
         let card = current_card.clone();
         Callback::from(move |_| {
-            while let Some(&new_card) = CARDS[1..].choose(&mut rand::thread_rng()) {
+            while let Ok(&new_card) =
+                cards.choose_weighted(&mut rand::thread_rng(), |card| card.probability)
+            {
                 if new_card != *card {
                     card.set(new_card);
                     break;

@@ -1,0 +1,52 @@
+
+// These are the cards that will be used in the game
+// The cards are stored in an array
+// The cards are meant to be positive,
+// as you only get them if you roll a 20
+
+[
+
+    // This is the first card, it will be shown when the page loads
+    Card (
+        title: "Ölkort",
+        description: "Det här är ett ölkort, dra ett ölkort när du slår 20!",
+        probability: 0,
+    ),
+
+    // The following cards are actual cards that will be used in the game
+    Card (
+        title: "Divine Intervention",
+        description: "Gudarna har bestämt att du ska byta klass. Välj en klass att byta till!",
+        probability: 2,
+    ),
+    Card (
+        title: "Oscar fattar inte",
+        description: "Oscar förstår inte reglerna, han dricker 2 klunkar",
+        probability: 2,
+    ),
+    Card (
+        title: "Uno Reverse Card",
+        description: "Du får ett Uno Reverse Card, spara den tills du behöver den!",
+        probability: 5,
+    ),
+    Card ( 
+        title: "You laugh you lose!",
+        description: "Första personen som skrattar dricker 2 klunkar",
+        probability: 5,
+    ),    
+    Card (
+        title: "Kung",
+        description: "Du är kung, alla måste dricka när du dricker",
+        probability: 1,
+    ),
+    Card (
+        title: "Queen",
+        description: "...",
+        probability: 4,
+    ),
+    Card (
+        title: "Fiskmås",
+        description: "Emil hittar en fiskmås, han dricker 2 klunkar",
+        probability: 2,
+    ),
+]
