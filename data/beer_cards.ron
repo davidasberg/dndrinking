@@ -40,13 +40,103 @@
         probability: 1,
     ),
     Card (
-        title: "Queen",
-        description: "...",
-        probability: 4,
-    ),
-    Card (
         title: "Fiskmås",
         description: "Emil hittar en fiskmås, han dricker 2 klunkar",
         probability: 2,
+    ),
+    Card (
+        title: "Klappa Figge",
+        description: "Kan du inte hitta Figge? Drick 1 klunk",
+        probability: 4,
+    ),
+    Card (
+        title: "Fireball",
+        description: "Du kan alltid kasta en fireball, oavsett hur litet rummet är. Ta en fireball!",
+        probability: 1,
+    ),
+    Card (
+        title: "Robot Wars",
+        description: "Kör tumkrig med valfri person",
+        probability: 5,
+    ),
+    Card (
+        title: "Skalle-per",
+        description: "Alla som snaggat sig dricker",
+        probability: 2,
+    ),
+    Card (
+        title: "Schack matt",
+        description: "Ni vet vilka ni är, drick!",
+        probability: 1,
+    ),
+    Card (
+        title: "Ph",
+        description: "Alla som sitter i en pjäshållare dricker",
+        probability: 1,
+    ),
+    Card (
+        title: "Ye",
+        description: "Den som säger 'Ye' först dricker. Sebbe dricker",
+        probability: 1,
+    ),
+    Card (
+        title: "Ryssen kommer",
+        description: "Alla som gjort lumpen bör ta sig en klunk",
+        probability: 3,
+    ),
+    Card (
+        title: "Ryan Reynolds",
+        description: "Alla säger en kändis var för- och efternamn börjar på samma bokstav. Den som inte kan dricker",
+        probability: 3,
+    ),
+    Card (
+        title: "Din mamma",
+        description: "Vad heter den till vänsters mamma? Den som inte kan dricker",
+        probability: 6,
+    ),
+    Card (
+        title: "Din pappa?",
+        description: "Vad heter den till högers pappa? Den som inte kan dricker",
+        probability: 4,
+    ),
+    Card (
+        title: "Botten upp",
+        description: "Alla kör botten upp",
+        probability: 1,
+    ),
+    Card (
+        title: "Såsen i påsen",
+        description: "David dricker",
+        probability: 1,
+    ),
+    Card (
+        title: "Antal spelare",
+        description: "Du har 3 sekunder på dig att säga hur många spelare som är med just nu. Annars dricker du",
+        probability: 1,
+    ),
+    Card (
+        title: "Burgare eller sallad?",
+        description: "Äter du hellre en fet fettig superoljig burgare (tumme up) eller en supernyttig fräsch sallad (tumme ned)? Den som är i minoritet dricker",
+        probability: 1,
+    ),
+    Card (
+        title: "Vad är det för dag idag?",
+        description: "Du har 3 sekunder på dig att säga vilken dag det är idag. Annars dricker du",
+        probability: 1,
+    ),
+    Card (
+        title: "Alexa, play despacito",
+        description: "DJ dricker",
+        probability: 1,
+    ),
+    Card (
+        title: "Gunslinger",
+        description: "Du är Sheriffen! Välj två personer som ska ha en showdown, den som 'skjuter' långsammast dricker",
+        probability: 4,
+    ),
+    Card (
+        title: "Mima en scen från en film",
+        description: "Den första som sätter filmen får dela ut klunkar",
+        probability: 4,
     ),
 ]
